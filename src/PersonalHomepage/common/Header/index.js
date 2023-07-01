@@ -9,8 +9,8 @@ import {
   Envelope,
   Link,
 } from "./styled";
-import { myImage } from "./myImage";
-import envelope from "../../Images/Message.svg";
+import { myImage } from "./images";
+import envelope from "../../common/Header/images/Message.svg";
 import { AboutMe } from "../../AboutMe";
 
 const Header = () => (
