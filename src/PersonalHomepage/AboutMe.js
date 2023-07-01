@@ -7,7 +7,7 @@ export const AboutMe = {
   github: "https://github.com/PawelOwiesek",
   linkedIn: "www.linkedin.com/in/pawel-owiesek-9b5687244",
 
-  Skills: [
+  skills: [
     "Semantic & accessible HTML",
     "Responsive Web Design",
     "Teamwork",
