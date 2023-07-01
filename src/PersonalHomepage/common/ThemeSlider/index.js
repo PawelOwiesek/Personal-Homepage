@@ -1,7 +1,6 @@
-import sun from "../../Images/brightness 1.svg";
-import { Wrapper, Button, Sun, ThemeText } from "./styled";
+import { Wrapper, TextContent, Button, Container, Sun } from "./styled";
 import { useDispatch, useSelector } from "react-redux";
-import { selectThemeState, toggleTheme } from "../../themeSlice";
+import { selectThemeState, toggleTheme } from "./themeSlice";
 
 const ThemeButton = () => {
   const dispatch = useDispatch();
@@ -9,13 +8,13 @@ const ThemeButton = () => {
 
   return (
     <Wrapper>
-      <ThemeText>
-        DARK MODE <span>{theme ? "ON" : "OFF"}</span>
-      </ThemeText>
+      <TextContent>
+        Dark mode <span>{theme ? "on" : "off"}</span>
+      </TextContent>
       <Button onClick={() => dispatch(toggleTheme())}>
-        <Sun>
-          <img src={sun} alt="" />
-        </Sun>
+        <Container slideRight={theme}>
+          <Sun />
+        </Container>
       </Button>
     </Wrapper>
   );
