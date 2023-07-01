@@ -2,7 +2,7 @@ import { ThemeProvider } from "styled-components";
 import Header from "./common/Header";
 import { GlobalStyles } from "./GlobalStyles";
 import { useSelector } from "react-redux";
-import { selectThemeState } from "./themeSlice";
+import { selectThemeState } from "./common/ThemeSlider/themeSlice";
 import { darkTheme, lightTheme } from "./theme";
 import ThemeButton from "./common/ThemeSlider";
 
