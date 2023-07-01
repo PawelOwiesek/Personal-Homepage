@@ -21,7 +21,7 @@ export const Button = styled.button`
   height: 26px;
   border: 1px solid ${({ theme }) => theme.basic.text};
   border-radius: 30px;
-  background-image: ${({ theme }) => theme.themeSwitcher.backgroundImage};
+  background-image: ${({ theme }) => theme.themeButton.backgroundImage};
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
