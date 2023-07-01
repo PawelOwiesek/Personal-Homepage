@@ -27,7 +27,7 @@ export const PrevTitle = styled.span`
   font-weight: 700;
   line-height: 1.3;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.basic.bacground};
+  color: ${({ theme }) => theme.basic.text};
   margin-bottom: 12px;
 `;
 
@@ -36,24 +36,27 @@ export const Title = styled.h1`
   font-weight: 900;
   letter-spacing: 1.9px;
   margin: 0;
+  color: ${({ theme }) => theme.titles.color};
 `;
 
 export const Description = styled.p`
   font-size: 20px;
+  font-weight: 400;
   line-height: 1.4;
   letter-spacing: 1px;
   margin: 35px 0 32px 0;
+  color: ${({ theme }) => theme.basic.text};
 `;
 
-export const MailButton = styled.button`
+export const EmailButton = styled.button`
   display: inline-flex;
   padding: 12px 16px;
   justify-content: center;
   align-items: center;
   gap: 16px;
   background-color: ${({ theme }) => theme.buttons.background};
-  border-radius: 4px;
   border: 1px solid ${({ theme }) => theme.buttons.background};
+  border-radius: 4px;
 `;
 
 export const Envelope = styled.img`
@@ -67,5 +70,5 @@ export const Link = styled.a`
   font-weight: 600;
   letter-spacing: 1px;
   text-decoration-line: none;
-  color: ${({ theme }) => theme.buttons.mainText};
+  color: ${({ theme }) => theme.buttons.text};
 `;
