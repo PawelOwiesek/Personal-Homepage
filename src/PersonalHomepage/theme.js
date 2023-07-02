@@ -11,8 +11,9 @@ const colors = {
   whiteLilac: "#FBFBFE",
   mineShaft: "#252525",
   mercury: "#E5E5E5",
-  lightGray: "#363636",
-  iron: "#D1D5DA",
+  lightGray: "#363636b8",
+  iron: "#d1d5da1a",
+  lightIron: "#d1d5da4d",
   silver: "#7e7e7e",
 };
 
@@ -38,6 +39,14 @@ export const lightTheme = {
   svgIcon: {
     color: colors.white,
   },
+
+  skillSection: {
+    background: colors.white,
+  },
+
+  divider: {
+    background: colors.lightIron,
+  },
 };
 
 export const darkTheme = {
@@ -61,5 +70,13 @@ export const darkTheme = {
 
   svgIcon: {
     color: colors.black,
+  },
+
+  skillSection: {
+    background: colors.lightGray,
+  },
+
+  divider: {
+    background: colors.iron,
   },
 };
