@@ -48,6 +48,3 @@ export const Item = styled.li`
     background-color: ${({ theme }) => theme.buttons.background};
   }
 `;
-export const DotImage = styled.img`
-  border: none;
-`;
