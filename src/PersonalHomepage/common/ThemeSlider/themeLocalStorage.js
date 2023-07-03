@@ -1,4 +1,4 @@
-export const SaveThemeInLocalStorage = (isTheme) => {
+export const saveThemeInLocalStorage = (isTheme) => {
   localStorage.setItem("theme", JSON.stringify(isTheme));
 };
 
