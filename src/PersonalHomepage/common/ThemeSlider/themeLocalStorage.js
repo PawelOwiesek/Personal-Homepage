@@ -1,9 +1,5 @@
-import { useSelector } from "react-redux";
-import { selectThemeState } from "./themeSlice";
-
-export const SaveThemeInLocalStorage = () => {
-  const theme = useSelector(selectThemeState());
-  localStorage.setItem("theme", JSON.stringify(theme));
+export const SaveThemeInLocalStorage = (isTheme) => {
+  localStorage.setItem("theme", JSON.stringify(isTheme));
 };
 
 export const themeFromLocalStorage = () => {
