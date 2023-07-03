@@ -1,9 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { themeFromLocalStorage } from "./themeLocalStorage";
 
 const themeSlice = createSlice({
   name: "theme",
   initialState: {
-    isTheme: false,
+    isTheme: themeFromLocalStorage(),
   },
   reducers: {
     toggleTheme: (state) => {
