@@ -72,7 +72,11 @@ export const DemoLink = styled(Description)`
   margin: 0;
 `;
 
-export const Link = styled(Description)`
+export const Link = styled.a`
+  font-style: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.9cap;
   margin: 0 0 8px 8px;
   color: ${({ theme }) => theme.buttons.background};
 `;
