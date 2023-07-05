@@ -1,15 +1,16 @@
 import { ThemeProvider } from "styled-components";
 import { useSelector } from "react-redux";
 import { GlobalStyles } from "./GlobalStyles";
-import { selectThemeState } from "./common/ThemeSlider/themeSlice";
+import { selectLightTheme } from "./common/ThemeSlider/themeSlice";
 import { darkTheme, lightTheme } from "./theme";
 import ThemeButton from "./common/ThemeSlider";
 import Header from "./common/Header";
 import SkillSection from "./common/SectionSkills";
 import { skills, skillsToLearn } from "./AboutMe";
+import Repositories from "./features/Main";
 
 function App() {
-  const isLigthTheme = useSelector(selectThemeState);
+  const isLigthTheme = useSelector(selectLightTheme);
 
   return (
     <>
@@ -22,6 +23,7 @@ function App() {
           title="What I want to learn next 🚀"
           content={skillsToLearn}
         />
+        <Repositories />
       </ThemeProvider>
     </>
   );
