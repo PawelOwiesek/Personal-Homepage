@@ -47,6 +47,10 @@ export const lightTheme = {
   divider: {
     background: colors.lightIron,
   },
+
+  repoTitle: {
+    color: colors.scienceBlue,
+  },
 };
 
 export const darkTheme = {
@@ -78,5 +82,9 @@ export const darkTheme = {
 
   divider: {
     background: colors.iron,
+  },
+
+  repoTitle: {
+    color: colors.white,
   },
 };
