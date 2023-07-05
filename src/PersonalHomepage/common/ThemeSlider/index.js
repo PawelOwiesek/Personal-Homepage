@@ -1,10 +1,10 @@
 import { Wrapper, TextContent, Button, Container, Sun } from "./styled";
 import { useDispatch, useSelector } from "react-redux";
-import { selectThemeState, toggleTheme } from "./themeSlice";
+import { selectLightTheme, toggleTheme } from "./themeSlice";
 
 const ThemeButton = () => {
   const dispatch = useDispatch();
-  const theme = useSelector(selectThemeState);
+  const theme = useSelector(selectLightTheme);
 
   return (
     <Wrapper>
