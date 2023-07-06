@@ -48,17 +48,6 @@ export const Description = styled.p`
   color: ${({ theme }) => theme.basic.text};
 `;
 
-export const EmailButton = styled.button`
-  display: inline-flex;
-  padding: 12px 16px;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  background-color: ${({ theme }) => theme.buttons.background};
-  border: 1px solid ${({ theme }) => theme.buttons.background};
-  border-radius: 4px;
-`;
-
 export const Envelope = styled.img`
   width: 24px;
   height: 24px;
