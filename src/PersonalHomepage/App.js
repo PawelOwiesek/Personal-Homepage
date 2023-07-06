@@ -7,7 +7,7 @@ import ThemeButton from "./common/ThemeSlider";
 import Header from "./common/Header";
 import SkillSection from "./common/SectionSkills";
 import { skills, skillsToLearn } from "./AboutMe";
-import Repositories from "./features/Main";
+import Repositories from "./features/Main/Repositories";
 
 function App() {
   const isLigthTheme = useSelector(selectLightTheme);
