@@ -8,6 +8,7 @@ import Header from "./common/Header";
 import SkillSection from "./common/SectionSkills";
 import { skills, skillsToLearn } from "./AboutMe";
 import Repositories from "./features/Main/Repositories";
+import Footer from "./common/Footer";
 
 function App() {
   const isLigthTheme = useSelector(selectLightTheme);
@@ -24,6 +25,7 @@ function App() {
           content={skillsToLearn}
         />
         <Repositories />
+        <Footer />
       </ThemeProvider>
     </>
   );
