@@ -26,4 +26,5 @@ export const { fetchGitData, fetchGitDataSuccess, fetchGitDataFailure } =
 export const selectDataState = (state) => state.gitData;
 export const selectRepositoresData = (state) =>
   selectDataState(state).repositories;
+export const selectDataStatus = (state) => selectDataState(state).status;
 export default gitDataSlice.reducer;
