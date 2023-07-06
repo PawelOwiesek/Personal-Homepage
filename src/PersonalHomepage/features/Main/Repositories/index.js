@@ -32,7 +32,7 @@ const Repositories = () => {
       <SubTitle>My recent projects</SubTitle>
       {dataStatus === "loading" ? (
         <Loading />
-      ) : dataStatus === "sucess" ? (
+      ) : dataStatus === "success" ? (
         <List>
           {repositories.map((item) => (
             <ListItem key={item.id}>
