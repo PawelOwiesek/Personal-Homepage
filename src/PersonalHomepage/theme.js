@@ -5,6 +5,7 @@ import {
 
 const colors = {
   scienceBlue: "#0366D6",
+  dodgerBlue: "#2188FF",
   slateGray: "#6E7E91",
   white: "#FFFFFF",
   black: "#000000",
@@ -15,6 +16,8 @@ const colors = {
   iron: "#d1d5da1a",
   lightIron: "#d1d5da4d",
   silver: "#7e7e7e",
+  linkBlue: "#0366d633",
+  linkDark: "#2188ff66",
 };
 
 export const lightTheme = {
@@ -51,6 +54,10 @@ export const lightTheme = {
   repoTitle: {
     color: colors.scienceBlue,
   },
+
+  linkOnderLine: {
+    color: colors.linkBlue,
+  },
 };
 
 export const darkTheme = {
@@ -86,5 +93,9 @@ export const darkTheme = {
 
   repoTitle: {
     color: colors.white,
+  },
+
+  linkOnderLine: {
+    color: colors.linkDark,
   },
 };
