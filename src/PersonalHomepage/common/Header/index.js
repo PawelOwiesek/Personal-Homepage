@@ -5,13 +5,13 @@ import {
   PrevTitle,
   Title,
   Description,
-  EmailButton,
   Envelope,
   Link,
 } from "./styled";
 import { myImage } from "./images";
 import envelope from "../../common/Header/images/Message.svg";
 import { AboutMe } from "../../AboutMe";
+import { Button } from "../../MainButton/styled";
 
 const Header = () => (
   <HeaderContainer>
@@ -20,7 +20,7 @@ const Header = () => (
       <PrevTitle>This is</PrevTitle>
       <Title>{AboutMe.name}</Title>
       <Description>{AboutMe.content}</Description>
-      <EmailButton>
+      <Button>
         <Envelope src={envelope} alt="Email" />
         <Link
           href={`mailto:${AboutMe.email}`}
@@ -29,7 +29,7 @@ const Header = () => (
         >
           Hire Me
         </Link>
-      </EmailButton>
+      </Button>
     </HeaderContent>
   </HeaderContainer>
 );
