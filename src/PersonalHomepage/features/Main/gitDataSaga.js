@@ -1,5 +1,5 @@
 import { call, put, delay, takeLatest } from "redux-saga/effects";
-import { gitHubRepositories } from "./fetchGitHubData";
+import { gitHubRepositories } from "../Main/FetchingData/fetchGitHubData";
 import {
   fetchGitData,
   fetchGitDataSuccess,
