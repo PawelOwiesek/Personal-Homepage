@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchGitData } from "../gitDataSlice";
 import { selectRepositoresData, selectDataStatus } from "../gitDataSlice";
-import Error from "../FetchingData/FetchDataError/FetchDataError";
+import Error from "../FetchingData/FetchDataError";
 import {
   Wrapper,
   GitIco,
@@ -32,7 +32,7 @@ const Repositories = () => {
       <SubTitle>My recent projects</SubTitle>
       {dataStatus === "loading" ? (
         <Loading />
-      ) : dataStatus === "success" ? (
+      ) : dataStatus === "sucess" ? (
         <List>
           {repositories.map((item) => (
             <ListItem key={item.id}>
