@@ -39,8 +39,10 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li`
-  display: flex;
-  flex-direction: column;
+  width: 593px;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 24px;
   justify-content: flex-start;
   padding: 56px;
   list-style-type: none;
@@ -55,20 +57,22 @@ export const RepoTitle = styled.h3`
   font-style: 24px;
   font-weight: 700;
   letter-spacing: 1.2px;
+  margin: 0;
   color: ${({ theme }) => theme.repoTitle.color};
 `;
 
-export const Description = styled.p`
+export const Description = styled.span`
   display: flex;
   font-style: 18px;
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: 0.9cap;
-  margin: 24px 0;
+  margin: 0;
   color: ${({ theme }) => theme.basic.text};
 `;
 
 export const DemoLink = styled(Description)`
+  display: inline-block;
   margin: 0;
 `;
 
@@ -76,7 +80,7 @@ export const Link = styled.a`
   font-style: 18px;
   font-weight: 400;
   line-height: 1.4;
-  letter-spacing: 0.9cap;
+  letter-spacing: 0.9px;
   margin: 0 0 8px 8px;
   text-decoration: none;
   border-bottom: 1px solid ${({ theme }) => theme.linkOnderLine.color};
