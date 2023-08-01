@@ -42,6 +42,26 @@ export const Socials = styled.div`
   color: ${({ theme }) => theme.svgIcon.color};
 `;
 
-export const GitIcon = styled(gitIcon)``;
-export const FacebookIcon = styled(facebookIcon)``;
-export const LinkedIn = styled(linkedIn)``;
+export const GitIcon = styled(gitIcon)`
+  cursor: pointer;
+  fill: ${({ theme }) => theme.titles.color};
+  &:hover {
+    fill: ${({ theme }) => theme.buttons.background};
+  }
+`;
+export const FacebookIcon = styled(facebookIcon)`
+  cursor: pointer;
+  fill: ${({ theme }) => theme.titles.color};
+  &:hover {
+    fill: ${({ theme }) => theme.buttons.background};
+  }
+`;
+export const LinkedIn = styled(linkedIn)`
+  cursor: pointer;
+  fill: ${({ theme }) => theme.titles.color};
+  &:hover {
+    fill: ${({ theme }) => theme.buttons.background};
+  }
+`;
+
+export const Link = styled.a``;
