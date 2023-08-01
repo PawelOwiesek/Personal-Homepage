@@ -58,6 +58,10 @@ export const lightTheme = {
   linkOnderLine: {
     color: colors.linkBlue,
   },
+
+  hover: {
+    color: colors.linkBlue,
+  },
 };
 
 export const darkTheme = {
@@ -97,5 +101,9 @@ export const darkTheme = {
 
   linkOnderLine: {
     color: colors.linkDark,
+  },
+
+  hover: {
+    color: colors.dodgerBlue,
   },
 };
