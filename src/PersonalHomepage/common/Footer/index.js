@@ -5,6 +5,7 @@ import {
   FacebookIcon,
   GitIcon,
   Header,
+  Link,
   LinkedIn,
   Socials,
 } from "./styled";
@@ -16,12 +17,18 @@ const Footer = () => (
     <Content>
       I’m always open to new projects whenever I have the time. If you have a
       website, dashboard or mobile app in mind and need some help to make your
-      ideas come to life, feel free to conatct me
+      ideas come to life, feel free to conatct me 🖐
     </Content>
     <Socials>
-      <GitIcon />
-      <FacebookIcon />
-      <LinkedIn />
+      <Link href="https://github.com/PawelOwiesek">
+        <GitIcon />
+      </Link>
+      <Link href="https://www.facebook.com/pawel.owiesek">
+        <FacebookIcon />
+      </Link>
+      <Link href="https://www.linkedin.com/in/pawel-owiesek-9b5687244/">
+        <LinkedIn />
+      </Link>
     </Socials>
   </Container>
 );
