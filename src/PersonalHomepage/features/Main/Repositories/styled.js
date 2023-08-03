@@ -6,11 +6,20 @@ export const Wrapper = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 72px;
+  margin: 72px 0 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    margin: 48px 16px 0;
+  }
 `;
 
 export const GitIco = styled(GitIcon)`
   color: ${({ theme }) => theme.buttons.background};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    width: 32px;
+    height: 32px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -19,6 +28,12 @@ export const Title = styled.h2`
   letter-spacing: 1.5px;
   margin: 12px 0 8px;
   color: ${({ theme }) => theme.titles.color};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    font-size: 18px;
+    letter-spacing: 0.9px;
+    margin: 12px 0 16px;
+  }
 `;
 
 export const SubTitle = styled.h3`
@@ -26,8 +41,13 @@ export const SubTitle = styled.h3`
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: 1px;
-  margin: 0;
+  margin: 0 0 24px 0;
   color: ${({ theme }) => theme.titles.color};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    font-size: 17px;
+    letter-spacing: 0.85px;
+  }
 `;
 
 export const List = styled.ul`
@@ -36,6 +56,21 @@ export const List = styled.ul`
   gap: 32px;
   background-color: ${({ theme }) => theme.basic.background};
   padding: 0;
+  margin: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.ipadMax}) {
+    grid-template-columns: auto auto;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.ipad}) {
+    grid-template-columns: auto;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 `;
 
 export const ListItem = styled.li`
@@ -55,6 +90,18 @@ export const ListItem = styled.li`
   &:hover {
     border: 6px solid ${({ theme }) => theme.hover.color};
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.ipadMax}) {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 24px;
+    gap: 16px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    width: 288px;
+  }
 `;
 
 export const RepoTitle = styled.h3`
@@ -63,6 +110,11 @@ export const RepoTitle = styled.h3`
   letter-spacing: 1.2px;
   margin: 0;
   color: ${({ theme }) => theme.repoTitle.color};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    font-size: 16px;
+    align-self: flex-start;
+  }
 `;
 
 export const Description = styled.span`
@@ -73,11 +125,26 @@ export const Description = styled.span`
   letter-spacing: 0.9cap;
   margin: 0;
   color: ${({ theme }) => theme.basic.text};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    line-height: normal;
+  }
 `;
 
 export const DemoLink = styled(Description)`
   display: inline-block;
   margin: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    display: flex;
+    align-self: flex-start;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    display: inline-block;
+  }
 `;
 
 export const Link = styled.a`
@@ -90,4 +157,11 @@ export const Link = styled.a`
   border-bottom: 1px solid ${({ theme }) => theme.linkOnderLine.color};
 
   color: ${({ theme }) => theme.buttons.background};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    word-break: break-word;
+  }
 `;

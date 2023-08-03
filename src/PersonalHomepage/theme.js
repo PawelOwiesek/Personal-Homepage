@@ -62,6 +62,13 @@ export const lightTheme = {
   hover: {
     color: colors.linkBlue,
   },
+  breakpoint: {
+    small: "320px",
+    medium: "450px",
+    large: "767px",
+    ipad: "1024px",
+    ipadMax: "1280px",
+  },
 };
 
 export const darkTheme = {
@@ -105,5 +112,12 @@ export const darkTheme = {
 
   hover: {
     color: colors.dodgerBlue,
+  },
+  breakpoint: {
+    small: "320px",
+    medium: "450px",
+    large: "767px",
+    ipad: "1024px",
+    ipadMax: "1280px",
   },
 };

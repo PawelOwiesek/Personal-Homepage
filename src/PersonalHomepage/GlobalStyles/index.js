@@ -16,6 +16,16 @@ export const GlobalStyles = createGlobalStyle`
         padding: 16px;
         font-family:"Inter",sans-serif;
         color:${({ theme }) => theme.basic.mainText};
-        background-color: ${({ theme }) => theme.basic.background}
+        background-color: ${({ theme }) => theme.basic.background};
+
+        @media (max-width: ${({ theme }) => theme.breakpoint.ipadMax}){
+            margin:35px auto;
+            max-width:1024px
+        }
+
+        @media (max-width: ${({ theme }) => theme.breakpoint.medium}){
+            margin: 21px 0;
+            padding:0;
+        }
     }
 `;

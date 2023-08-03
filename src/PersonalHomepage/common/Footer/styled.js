@@ -10,6 +10,18 @@ export const Container = styled.div`
   align-items: flex-start;
   max-width: 670px;
   color: ${({ theme }) => theme.titles.color};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.ipadMax}) {
+    max-width: max-content;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    margin: 0 16px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    max-width: 288px;
+  }
 `;
 
 export const Header = styled.h2`
@@ -17,7 +29,11 @@ export const Header = styled.h2`
   font-weight: 700;
   line-height: 1.3;
   text-transform: uppercase;
-  margin-top: 120px;
+  margin: 120px 0 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    margin: 48px 0 0;
+  }
 `;
 
 export const Email = styled.p`
@@ -25,6 +41,12 @@ export const Email = styled.p`
   font-weight: 900;
   letter-spacing: 1.6px;
   margin: 24px 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    font-size: 18px;
+    letter-spacing: 0.9px;
+    margin: 12px 0;
+  }
 `;
 
 export const Content = styled.p`
@@ -33,6 +55,12 @@ export const Content = styled.p`
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: 0.9px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 0.7px;
+  }
 `;
 
 export const Socials = styled.div`
@@ -40,6 +68,10 @@ export const Socials = styled.div`
   display: flex;
   gap: 24px;
   color: ${({ theme }) => theme.svgIcon.color};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    margin-top: 40px;
+  }
 `;
 
 export const GitIcon = styled(gitIcon)`
@@ -48,19 +80,36 @@ export const GitIcon = styled(gitIcon)`
   &:hover {
     fill: ${({ theme }) => theme.buttons.background};
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    width: 31px;
+    height: 31px;
+  }
 `;
+
 export const FacebookIcon = styled(facebookIcon)`
   cursor: pointer;
   fill: ${({ theme }) => theme.titles.color};
   &:hover {
     fill: ${({ theme }) => theme.buttons.background};
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    width: 31px;
+    height: 31px;
+  }
 `;
+
 export const LinkedIn = styled(linkedIn)`
   cursor: pointer;
   fill: ${({ theme }) => theme.titles.color};
   &:hover {
     fill: ${({ theme }) => theme.buttons.background};
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    width: 31px;
+    height: 31px;
   }
 `;
 

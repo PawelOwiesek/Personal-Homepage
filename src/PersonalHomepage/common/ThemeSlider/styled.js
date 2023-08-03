@@ -6,6 +6,11 @@ export const Wrapper = styled.div`
   justify-content: flex-end;
   align-items: center;
   gap: 12px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    position: absolute;
+    right: 17px;
+    max-width: 100px;
+  }
 `;
 
 export const TextContent = styled.p`
@@ -14,6 +19,10 @@ export const TextContent = styled.p`
   line-height: 13px;
   color: ${({ theme }) => theme.basic.text};
   text-transform: uppercase;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
+    display: none;
+  }
 `;
 
 export const Button = styled.button`
