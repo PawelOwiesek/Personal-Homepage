@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
         font-family:"Inter",sans-serif;
         color:${({ theme }) => theme.basic.mainText};
         background-color: ${({ theme }) => theme.basic.background};
-        transition:  2s  linear;
+
         @media (max-width: ${({ theme }) => theme.breakpoint.ipadMax}){
             margin:35px auto;
             max-width:1024px

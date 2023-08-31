@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
   justify-content: flex-end;
   align-items: center;
   gap: 12px;
+
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     position: absolute;
     right: 17px;
