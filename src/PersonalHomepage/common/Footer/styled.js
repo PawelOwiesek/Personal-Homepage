@@ -36,11 +36,19 @@ export const Header = styled.h2`
   }
 `;
 
-export const Email = styled.p`
+export const Email = styled.a`
   font-size: 32px;
   font-weight: 900;
   letter-spacing: 1.6px;
   margin: 24px 0;
+  cursor: pointer;
+  color: ${({ theme }) => theme.titles.color};
+  text-decoration: none;
+  transition: 0.3s linear;
+
+  &:hover {
+    color: ${({ theme }) => theme.buttons.background};
+  }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     font-size: 18px;
@@ -77,6 +85,8 @@ export const Socials = styled.div`
 export const GitIcon = styled(gitIcon)`
   cursor: pointer;
   fill: ${({ theme }) => theme.titles.color};
+  transition: 0.3s linear;
+
   &:hover {
     fill: ${({ theme }) => theme.buttons.background};
   }
@@ -90,6 +100,8 @@ export const GitIcon = styled(gitIcon)`
 export const FacebookIcon = styled(facebookIcon)`
   cursor: pointer;
   fill: ${({ theme }) => theme.titles.color};
+  transition: 0.3s linear;
+
   &:hover {
     fill: ${({ theme }) => theme.buttons.background};
   }
@@ -103,6 +115,8 @@ export const FacebookIcon = styled(facebookIcon)`
 export const LinkedIn = styled(linkedIn)`
   cursor: pointer;
   fill: ${({ theme }) => theme.titles.color};
+  transition: 0.3s linear;
+
   &:hover {
     fill: ${({ theme }) => theme.buttons.background};
   }

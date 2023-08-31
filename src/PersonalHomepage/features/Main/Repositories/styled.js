@@ -7,7 +7,7 @@ export const Wrapper = styled.main`
   justify-content: center;
   align-items: center;
   margin: 72px 0 0;
-
+  transition: all 5s linear;
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     margin: 48px 16px 0;
   }
@@ -81,13 +81,14 @@ export const ListItem = styled.li`
   justify-content: flex-start;
   padding: 56px;
   list-style-type: none;
+  transition: 0.3s linear;
   background-color: ${({ theme }) => theme.skillSection.background};
   border: 6px solid ${({ theme }) => theme.divider.background};
   border-radius: 4px;
   box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03),
     0px -2px 50px 0px rgba(9, 10, 51, 0.02);
 
-  &:hover {
+  &:hover:focus {
     border: 6px solid ${({ theme }) => theme.hover.color};
   }
 
@@ -155,8 +156,12 @@ export const Link = styled.a`
   margin: 0 0 8px 8px;
   text-decoration: none;
   border-bottom: 1px solid ${({ theme }) => theme.linkOnderLine.color};
-
+  opacity: 0.8;
   color: ${({ theme }) => theme.buttons.background};
+
+  &:hover {
+    opacity: 1;
+  }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     font-size: 14px;
