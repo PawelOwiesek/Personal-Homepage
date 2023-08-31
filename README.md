@@ -1,9 +1,9 @@
 <div align=center>
 <h1>Personal homepage</h1>
-https://pawelowiesek.github.io/personal-homepage/
-
-
-  
+<h2> https://pawelowiesek.github.io/personal-homepage/</h2>
+<p>
+<img width=450px src=https://github.com/PawelOwiesek/personal-homepage/blob/master/public/og-share.png/>
+  </p>
   <strong>Demo:</strong>
 <p> <img width=450px src="https://github.com/PawelOwiesek/personal-homepage/blob/master/public/personalHomepage-demo.gif"/></p>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
