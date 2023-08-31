@@ -1,3 +1,4 @@
+import { AboutMe } from "../../AboutMe";
 import {
   Container,
   Content,
@@ -13,7 +14,11 @@ import {
 const Footer = () => (
   <Container>
     <Header>Let's talk!</Header>
-    <Email>PawelOwiesek@gmail.com</Email>
+    <Email
+      href={`mailto:${AboutMe.email}`}
+      title={`send Emial to ${AboutMe.email}`}
+      rel="noreferrer noopener"
+    />
     <Content>
       I’m always open to new projects whenever I have the time. If you have a
       website, dashboard or mobile app in mind and need some help to make your
