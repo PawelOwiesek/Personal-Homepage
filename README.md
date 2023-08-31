@@ -1,6 +1,7 @@
 <div align=center>
 <h1>Personal homepage</h1>
 <h2> https://pawelowiesek.github.io/personal-homepage/</h2>
+  <p>Hello! I warmly welcome you and invite you to visit my portfolio website. The website has been built using <strong>React, React Saga, React Redux, Styled Components, and Axios</strong>. On the website, you can explore all completed projects as well as those that are still in progress. You will also find a list of skills I've acquired during my course. The website can be displayed in both light and dark themes. There are also <strong>useful links</strong>, such as a way to get in touch with me, which I strongly encourage.</p>
 <p>
 <img width=450px src=https://github.com/PawelOwiesek/personal-homepage/blob/master/public/og-share.png/>
   </p>
