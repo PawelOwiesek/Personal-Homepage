@@ -18,7 +18,9 @@ const Footer = () => (
       href={`mailto:${AboutMe.email}`}
       title={`send Emial to ${AboutMe.email}`}
       rel="noreferrer noopener"
-    />
+    >
+      PawelOwiesek@gmail.com
+    </Email>
     <Content>
       I’m always open to new projects whenever I have the time. If you have a
       website, dashboard or mobile app in mind and need some help to make your
