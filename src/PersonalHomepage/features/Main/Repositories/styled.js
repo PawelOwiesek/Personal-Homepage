@@ -123,7 +123,7 @@ export const Description = styled.span`
   font-style: 18px;
   font-weight: 400;
   line-height: 1.4;
-  letter-spacing: 0.9cap;
+  letter-spacing: 0.9px;
   margin: 0;
   color: ${({ theme }) => theme.basic.text};
 

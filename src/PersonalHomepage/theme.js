@@ -103,7 +103,7 @@ export const darkTheme = {
   },
 
   repoTitle: {
-    color: colors.white,
+    color: colors.scienceBlue,
   },
 
   linkOnderLine: {
